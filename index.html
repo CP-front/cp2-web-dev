@@ -8,51 +8,57 @@
     <title>Tuezin Cars</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="header-content">
-                <img src="./src/assets/VisionaryCars3.png" alt="Logo">
-            </div>
-        </header>
-    <section class="hero">
-        <header>
-            <h1><span>Tuezin</span>CARS</h1>
-
-            <nav>
-                <ul class="header-menu">
-                    <li><a href="./menu.html" class="item-menu">Home</a></li>
-                    <li><a href="./index.html" class="item-menu">Carros</a></li>
-                    <li><a href="/pages/quiz.html" class="item-menu">Quiz</a></li>
-                    <li><a href="#" class="item-menu">Sobre</a></li>
-                </ul>
-            </nav>
-
-            <div class="hamburguer">
-                <span class="barra"></span>
-                <span class="barra"></span>
-                <span class="barra"></span>
-            </div>
-
-        </header>
-        <h2 id="titulo">CARROS <span>MCQUEEN KATCHAU</span></h2>
-    </section>
-
-    <div id="conteudo">
-            <main>
-                <article class="carro">
-                    <img src="./src/assets/sport.jpg" alt="">
-                    <h3>Caroo Chaves</h3>
-                    <p>bla bla bla bla bla bla</p>
-                    <p class="preco">R$NAO TEM</p>
-                    <button type="submit">Fazer Orçamento</button>
-                </article>
-            </main>
+    <header>
+        <div class="logo">
+            <img src="./src/assets/VisionaryCars.png" alt="VisionaryCars Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/carros.html">Carros</a></li>
+                <li><a href="./pages/sobre.html">Sobre</a></li>
+                <li><a href="./pages/quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <footer>
-            <p>Footer de gue?</p>
-        </footer>
-    </div>
+    <main>
+        <section class="hero">
+
+            <div class="item active" id="item1">
+                <div class="item-content">
+                    <h2>Carro1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="./src/pages/carros.html" class="btn">Ver Mais</a>
+                </div>
+            </div>
+            <div class="item" id="item2">
+                <div class="item-content">
+                    <h2>Carro2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="./src/pages/carros.html" class="btn">Ver Mais</a>
+                </div>
+            </div>
+            <div class="item" id="item3">
+                <div class="item-content">
+                    <h2>Carro3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="./src/pages/quiz.html" class="btn">Ver Mais</a>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h5>&copy; 2025-todos os direitos reservados</h5>
+    </footer>
 
     <script src="./src/js/script.js"></script>
 </body>
