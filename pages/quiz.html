@@ -10,8 +10,7 @@
     <section class="hero">
         <header>
             <h1><span>Tuezin</span>Quiz</h1>
-
-            <nav>
+            <!-- <nav>
                 <ul class="header-menu">
                     <li><a href="../index.html" class="item-menu">Home</a></li>
                     <li><a href="#" class="item-menu">Carros</a></li>
@@ -24,10 +23,35 @@
                 <span class="barra"></span>
                 <span class="barra"></span>
                 <span class="barra"></span>
-            </div>
+            </div> -->
 
         </header>
     </section>
     
+    <main id="container-quiz">
+        <div class="quiz">
+            <h1>Saiba seu tipo de carro ideal</h1>
+            <section id="container-perguntas">
+                <h2 id="pergunta"></h2>
+                <div id="container-respostas">
+                    <input type="text" placeholder="Digite sua resposta" id="resposta">
+                </div>
+                    <button id="proximo">Próxima Pergunta</button>
+                    <p id="message"></p>
+                <section id="container-resultado" class="hidden">
+                    <h2>Resultado do Quiz</h2>
+                    <ul id="lista-resultado"></ul>
+                    <button id="inicio-btn">Reiniciar</button>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <h5>&copy; 2025-todos os direitos reservados</h5>
+    </footer>
+
+    <script src="../src/js/quiz.js"></script>
+
 </body>
 </html>

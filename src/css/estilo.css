@@ -1,3 +1,11 @@
+ESTILO CSS
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -73,3 +81,125 @@ footer {
   text-align: center;
   font-size: 16px;
 }
+
+body{
+    background: #f0f0f0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: 5px 5px 5px #555;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap:20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:#555;
+    font-weight: 600;
+}
+header nav ul li a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+header #logo{
+    color: blue;
+}
+.banner #image{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+/* QUIZ */
+
+#container-quiz{
+    background: #f4f4f4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.quiz{
+    background: #b8c6bb;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+.quiz h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+#container-perguntas h2{
+    color: blue;
+    margin-bottom: 20px;
+}
+#container-respostas{
+    margin-bottom: 20px;
+}
+#resposta{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid blue;
+    font-size: 1rem;
+}
+#proximo{
+    background: blueviolet;
+    color:#fff;
+    padding: 10px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#proximo:hover{
+    background: blue;
+}
+#message{
+    margin-top: 15px;
+    font-weight: 500;
+}
+#container-resultado{
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+#container-resultado h2{
+    color: #333;
+    margin-bottom: 20px;
+}
+#lista-resultado{
+    list-style: none;
+    padding: 0;
+}
+#lista-resultado li{
+    margin-bottom: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+.hidden{
+    display: none;
+}
+#inicio-btn{
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+#inicio-btn:hover{
+    background: greenyellow;
+} 
