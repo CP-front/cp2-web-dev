@@ -1,0 +1,100 @@
+header{
+    background:#000;
+  }
+  header nav a{
+    color:#fff;
+  }
+  main{
+    background:#fff;
+    min-height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding:4rem 1rem;
+  }
+  .titulo-sobre{
+  font-size:3rem;
+  letter-spacing:.05em;
+  margin-bottom:2rem;
+}
+  .sobre-box{
+max-width:900px;
+margin:0 auto;        
+padding-left:60px;    
+  }
+  .sobre-box h1,
+  .sobre-box p{
+    color:#000;          
+  }
+  .sobre-box h1{
+    font-size:2rem;
+    margin-bottom:1rem;
+  }
+  .sobre-box p{
+    line-height:1.6;
+    text-align:justify;
+  }
+.sobre-conteudo{
+  display:flex;
+  gap:2rem;
+  align-items:flex-start;
+  animation: fadeUp 0.8s ease-out both;
+  margin-left: -20px;
+}
+.sobre-logo{
+  width:200px;
+  height:auto;
+  flex-shrink:0;
+}
+.sobre-conteudo p{
+  color:#000;
+  line-height:1.6;
+  text-align:justify;
+}
+@media(max-width:720px){
+  .sobre-conteudo{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+  .sobre-box{
+    padding-left:0;
+}
+ .titulo-sobre{
+    font-size:2.2rem;text-align:center;
+}
+  .sobre-logo{
+    width:160px;
+  }
+}
+  footer{
+    background:#000;
+    color:#fff;
+    padding:2rem 1rem;
+  }
+  footer .footer-inner{
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+  }
+  footer .footer-logo{
+    margin-left:clamp(0px,10vw,120px);
+  }
+  footer img{
+    width:80px;
+    height:auto;
+  }
+
+  /*animação*/
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
