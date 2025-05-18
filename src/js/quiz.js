@@ -1,14 +1,18 @@
 //Evento que carrega a pagina automaticamente
 document.addEventListener('DOMContentLoaded', ()=>{
+
+    alert("Seja Bem-vindo ao nosso questionário!");
+
     //Declarando as variaveis
     const pergunta = document.getElementById('pergunta');
     const resposta = document.getElementById('resposta');
-    const proximaPergunta =document.getElementById('proximo');
+    const proximaPergunta = document.getElementById('proximo');
     const mensagem = document.getElementById('message');
     const containerPerguntas =document.getElementById('container-perguntas');
     const containerResultado =document.getElementById('container-resultado');
     const listaResultado = document.getElementById('lista-resultado');
     const reiniciarBotao = document.getElementById('inicio-btn');
+    const resultadoCarro = document.getElementById('carro-final')
     
     //Declarando o array de perguntas
     const questoes =[
@@ -45,6 +49,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     function mostrarResultado(){
         containerPerguntas.classList.add('hidden');
         containerResultado.classList.remove('hidden');
+        resultadoCarro.classList.remove('hidden');
         listaResultado.innerHTML='';
     
         questoes.forEach((questoes,i)=>{
@@ -55,28 +60,46 @@ document.addEventListener('DOMContentLoaded', ()=>{
             })
         }
     
-        //Função para a proxima pergunta
+    //Função para a proxima pergunta
     
-        function nextQuestao(){
-            const respostaAtual = resposta.value.trim();
-            if(respostaAtual === ''){
-                mensagem.textContent="Por favor , digite sua resposta";
-                return;
-            }
-            respostas.push(respostaAtual);
-            perguntas++;
-            mostrarPergunta();
+    function nextQuestao(){
+        const respostaAtual = resposta.value.trim();
+        if(respostaAtual === ''){
+            mensagem.textContent="Por favor , digite sua resposta";
+            return;
         }
-    
-        function reiniciarQuiz(){
-            perguntas =0;
-            respostas.length =0;
-            containerResultado.classList.add('hidden');
-            containerPerguntas.classList.remove('hidden');
-            mostrarPergunta();
-        }
-        proximaPergunta.addEventListener('click',nextQuestao);
-        reiniciarBotao.addEventListener('click',reiniciarQuiz);
+        respostas.push(respostaAtual);
+        perguntas++;
         mostrarPergunta();
+    }
+
+    mostrarPergunta();
+
+    //Função para reiniciar o quiz
     
-    })
+    function reiniciarQuiz(){
+        perguntas =0;
+        respostas.length =0;
+        containerResultado.classList.add('hidden');
+        containerPerguntas.classList.remove('hidden');
+        mostrarPergunta();
+    }
+
+    //Função para mostrar resultado
+
+    function exibirResultados(){
+        const numeroCarro = Math.floor(Math.random() * 6) + 1;
+        const Imagem = `../src/assets/$imagem${numeroCarro}.jpg`;
+        const resultadoImagem = document.getElementById('resultado-imagem');
+        const img = document.createElement('img');
+        img.src = Imagem;
+        img.alt = `imagem${numeroCarro}`;
+        resultadoImagem.innerHTML = '';
+        resultadoImagem.appendChild(img);
+    }
+
+    proximaPergunta.addEventListener('click',nextQuestao);
+    reiniciarBotao.addEventListener('click',reiniciarQuiz);
+    mostrarPergunta();
+    
+})
