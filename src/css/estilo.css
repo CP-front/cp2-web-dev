@@ -68,13 +68,6 @@ header nav ul li a:hover:after{
     width: 100%;
 }
 
-.container{
-    height: 100vh;
-    position: relative;
-    background: #fff;
-    overflow: hidden;
-}
-
 .hero {
     position: relative;
     height: 800px;
@@ -113,12 +106,13 @@ header nav ul li a:hover:after{
 
 .item-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .item-content p {
-    font-size: 1rem;
-    margin-bottom: 30px;
+    color: #c4c4c4;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
 }
 
 .dots {
@@ -148,9 +142,9 @@ header nav ul li a:hover:after{
 }
 
 .btn{
-    padding: 12px 10px;
+    padding: 13px 18px;
     background: #fff;
-    border-radius: 20px;
+    border-radius: 10px;
     color: black;
     font: 1rem;
     font-weight: 600;
@@ -166,11 +160,11 @@ header nav ul li a:hover:after{
 
 /* Configuração das imagens de fundo do slideshow */
 #item1 {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../assets/suv.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../assets/menu3.jpg');
 }
 
 #item2 {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../assets/sport.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../assets/menu4.jpg');
 }
 
 #item3 {
@@ -180,6 +174,11 @@ header nav ul li a:hover:after{
 footer{
     background: #000000;
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 0.1rem 1rem;
     font-size: 0.95rem;
 }
+
+footer h5{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
